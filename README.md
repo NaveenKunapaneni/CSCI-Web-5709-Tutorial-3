@@ -1,70 +1,186 @@
-# Getting Started with Create React App
+# Tutorial - 3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**[Optional]** If what is being submitted is an individual Lab or Assignment. Otherwise, include a brief one paragraph description about the project.
 
-## Available Scripts
+* *Date Created*: 10 JUNE 2023
+* *Last Modification Date*: 10 JUN 2023
+* *Git URL*: <>
+* * Github URL*: <>
+* *Deployed URL*: <>
 
-In the project directory, you can run:
+## Authors
 
-### `npm start`
+* [Naveen Kunapaneni](nv676973@dal.ca)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Process
 
-### `npm test`
+In this tutorial i have created an registration page. User register by filling the input deatils firstname, lastname, email id, password. Each field has validations as suggested in the tutroial handout 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First name: only alphabets
+Last name: only alphabets
+Email Id: Valid Email format (eg: naveen_K@gmail.com)
+Password: Minimun 8 - maximum 16 Alphanumeric characters, atleast one speical character
 
-### `npm run build`
+Once the user enters all field and the password matches then the user will be redirected to profilepage where the user deatils are displayed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Created starter react app using
+* npx create-react-app my-app
+* cd my-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install dependencies
+* npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the application 
+* npm start
 
-### `npm run eject`
+I have pushed the code to both gitlab and github.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I have done the deployment using netlify, linked my github account to netlify and then selected the repository to host. Then click hosted the starter application using the "deploy site" button.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Built With
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* [React](http://www.dropwizard.io/1.0.2/docs/) - Frontend framework
+* [Netlify](https://www.netlify.org/) - Cloud platform used for application Deployement
+* [GitHub](https://github.com/) - The version control tool
+* [Visual Studio Code](https://code.visualstudio.com) - The source code editor used
+* [Material UI](https://mui.com/) - Design system used to build high quality digital experience.
 
-## Learn More
+## Sources Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Mugdha Agharkar, “Deploying React apps to Netlify” Brightspace. [Online]. Available: https://dal.brightspace.com/d2l/le/content/274269/viewContent/3608648/View. [Accessed: 24-May-2023].
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+harikatalari08, “Build a Basic React App” GeeksForGeeks. [Online]. Available: https://www.geeksforgeeks.org/build-a-basic-react-app-that-display-hello-world/. [Accessed: 24-May-2023].
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+“Regex Expression for Gmail,” Regexr.com. [Online]. Available: https://regexr.com/3e48o. [Accessed: 11-Jun-2023].
 
-### Analyzing the Bundle Size
+R. Shah’s, “Javascript regular expression password validation having special characters,” Stack Overflow. [Online]. Available: https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters. [Accessed: 11-Jun-2023].
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+M. Durrant, “React doesn’t render autocomplete off,” Stack Overflow. [Online]. Available: https://stackoverflow.com/questions/37503656/react-doesnt-render-autocomplete-off. [Accessed: 11-Jun-2023].
 
-### Making a Progressive Web App
+A. Kinagi, “Disable Unnecessary escape character: \/ no-useless-escape,” Stack Overflow. [Online]. Available: https://stackoverflow.com/questions/47277133/disable-unnecessary-escape-character-no-useless-escape. [Accessed: 11-Jun-2023].
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### File Name - Register.js
 
-### Deployment
+*Line 59 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+const passwordRegex = /^(?=.*[!@#$%^&*])(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*]{8,16}$/;
 
-### `npm run build` fails to minify
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The code above was created by adapting the code in [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) as shown below: 
+
+```
+var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+```
+
+- <!---How---> The code in [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) was implemented by Rujoota Shah
+- <!---Why---> [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) Code was used because it uses a regex expession tovalidate password string
+- <!---How---> [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) Code was modified such that it accepts minimum 8 charactes and maximum is 16, atleast one special character in the password
+
+*Repeat as needed*
+
+
+## Acknowledgments
+
+* [Registration-page-image](https://www.freepik.com/free-photo/individuality-concept-among-paper-planes_19116923.htm#query=landing%20approach&position=43&from_view=keyword&track=ais)
+# Tutorial - 3
+
+**[Optional]** If what is being submitted is an individual Lab or Assignment. Otherwise, include a brief one paragraph description about the project.
+
+* *Date Created*: 10 JUNE 2023
+* *Last Modification Date*: 10 JUN 2023
+* *Git URL*: <>
+* * Github URL*: <>
+* *Deployed URL*: <>
+
+## Authors
+
+* [Naveen Kunapaneni](nv676973@dal.ca)
+
+
+### Process
+
+In this tutorial i have created an registration page. User register by filling the input deatils firstname, lastname, email id, password. Each field has validations as suggested in the tutroial handout 
+
+First name: only alphabets
+Last name: only alphabets
+Email Id: Valid Email format (eg: naveen_K@gmail.com)
+Password: Minimun 8 - maximum 16 Alphanumeric characters, atleast one speical character
+
+Once the user enters all field and the password matches then the user will be redirected to profilepage where the user deatils are displayed.
+
+Created starter react app using
+* npx create-react-app my-app
+* cd my-app
+
+Install dependencies
+* npm install
+
+Start the application 
+* npm start
+
+I have pushed the code to both gitlab and github.
+
+## Deployment
+
+I have done the deployment using netlify, linked my github account to netlify and then selected the repository to host. Then click hosted the starter application using the "deploy site" button.
+
+## Built With
+
+* [React](http://www.dropwizard.io/1.0.2/docs/) - Frontend framework
+* [Netlify](https://www.netlify.org/) - Cloud platform used for application Deployement
+* [GitHub](https://github.com/) - The version control tool
+* [Visual Studio Code](https://code.visualstudio.com) - The source code editor used
+* [Material UI](https://mui.com/) - Design system used to build high quality digital experience.
+
+## Sources Used
+
+Mugdha Agharkar, “Deploying React apps to Netlify” Brightspace. [Online]. Available: https://dal.brightspace.com/d2l/le/content/274269/viewContent/3608648/View. [Accessed: 24-May-2023].
+
+
+harikatalari08, “Build a Basic React App” GeeksForGeeks. [Online]. Available: https://www.geeksforgeeks.org/build-a-basic-react-app-that-display-hello-world/. [Accessed: 24-May-2023].
+
+“Regex Expression for Gmail,” Regexr.com. [Online]. Available: https://regexr.com/3e48o. [Accessed: 11-Jun-2023].
+
+R. Shah’s, “Javascript regular expression password validation having special characters,” Stack Overflow. [Online]. Available: https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters. [Accessed: 11-Jun-2023].
+
+M. Durrant, “React doesn’t render autocomplete off,” Stack Overflow. [Online]. Available: https://stackoverflow.com/questions/37503656/react-doesnt-render-autocomplete-off. [Accessed: 11-Jun-2023].
+
+A. Kinagi, “Disable Unnecessary escape character: \/ no-useless-escape,” Stack Overflow. [Online]. Available: https://stackoverflow.com/questions/47277133/disable-unnecessary-escape-character-no-useless-escape. [Accessed: 11-Jun-2023].
+
+
+
+### File Name - Register.js
+
+*Line 59 
+
+```
+const passwordRegex = /^(?=.*[!@#$%^&*])(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*]{8,16}$/;
+
+```
+
+The code above was created by adapting the code in [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) as shown below: 
+
+```
+var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+```
+
+- <!---How---> The code in [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) was implemented by Rujoota Shah
+- <!---Why---> [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) Code was used because it uses a regex expession tovalidate password string
+- <!---How---> [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) Code was modified such that it accepts minimum 8 charactes and maximum is 16, atleast one special character in the password
+
+*Repeat as needed*
+
+
+## Acknowledgments
+
+* [Registration-page-image](https://www.freepik.com/free-photo/individuality-concept-among-paper-planes_19116923.htm#query=landing%20approach&position=43&from_view=keyword&track=ais)
