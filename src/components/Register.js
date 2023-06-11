@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Grid, Paper, TextField } from '@mui/material';
-import TravelImage from '/Users/naveen/DAL/MAY_2023/5709/Github/tutorial3/src/plane.jpg';
+import TravelImage from '../plane.jpg';
 import './Register.css';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
