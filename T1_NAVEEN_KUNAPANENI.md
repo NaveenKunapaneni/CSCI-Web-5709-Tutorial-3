@@ -4,9 +4,27 @@
 
 * *Date Created*: 10 JUNE 2023
 * *Last Modification Date*: 10 JUN 2023
-* *Git URL*: <>
-* * Github URL*: <>
-* *Deployed URL*: <>
+* *Git URL*: <https://git.cs.dal.ca/kunapaneni/csci-5709-tutorials/-/tree/main/Tutorials-3>
+* * Github URL*: <https://github.com/NaveenKunapaneni/CSCI-Web-5709-Tutorial-3/>
+* *Deployed URL*: <https://tangerine-choux-3d501e.netlify.app/>
+* *
+* 
+## Group-18 Project Gitlab Repository 
+
+ [main] <https://git.cs.dal.ca/abhishekb/csci-5709-grp-18/>
+ [abhishek-bhatt] <https://git.cs.dal.ca/abhishekb/csci-5709-grp-18/-/tree/abhishek-bhatt>
+ [parshva-shah] <https://git.cs.dal.ca/abhishekb/csci-5709-grp-18/-/tree/parshva-shah>
+ [siddhesh-salve] <https://git.cs.dal.ca/abhishekb/csci-5709-grp-18/-/tree/siddhesh-salve>
+ [naveen-kunapaneni] <https://git.cs.dal.ca/abhishekb/csci-5709-grp-18/-/tree/naveen-kunapaneni>
+ [rahul-saliya] <https://git.cs.dal.ca/abhishekb/csci-5709-grp-18/-/tree/rahul-saliya>
+ [saiSindhu-bhimavarapu] <https://git.cs.dal.ca/abhishekb/csci-5709-grp-18/-/tree/SaiSindhu-Bhimavarapu>
+
+ ## Assignment Gitlab Repository
+
+ [main] <https://git.cs.dal.ca/kunapaneni/csci-5709-assignments>
+
+ ## Tutorial Gitlab Repository
+ [main] <https://git.cs.dal.ca/kunapaneni/csci-5709-tutorials>
 
 ## Authors
 
@@ -84,9 +102,6 @@ var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 - <!---How---> The code in [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) was implemented by Rujoota Shah
 - <!---Why---> [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) Code was used because it uses a regex expession tovalidate password string
 - <!---How---> [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) Code was modified such that it accepts minimum 8 charactes and maximum is 16, atleast one special character in the password
-
-*Repeat as needed*
-
 
 ## Acknowledgments
 
