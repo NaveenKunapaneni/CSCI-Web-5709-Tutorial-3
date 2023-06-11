@@ -4,9 +4,9 @@
 
 * *Date Created*: 10 JUNE 2023
 * *Last Modification Date*: 10 JUN 2023
-* *Git URL*: <>
-* * Github URL*: <>
-* *Deployed URL*: <>
+* *Git URL*: <https://git.cs.dal.ca/kunapaneni/csci-5709-tutorials/-/tree/main/Tutorials-3>
+* * Github URL*: <https://github.com/NaveenKunapaneni/CSCI-Web-5709-Tutorial-3/>
+* *Deployed URL*: <https://tangerine-choux-3d501e.netlify.app/>
 
 ## Authors
 
@@ -155,30 +155,6 @@ R. Shah’s, “Javascript regular expression password validation having special
 M. Durrant, “React doesn’t render autocomplete off,” Stack Overflow. [Online]. Available: https://stackoverflow.com/questions/37503656/react-doesnt-render-autocomplete-off. [Accessed: 11-Jun-2023].
 
 A. Kinagi, “Disable Unnecessary escape character: \/ no-useless-escape,” Stack Overflow. [Online]. Available: https://stackoverflow.com/questions/47277133/disable-unnecessary-escape-character-no-useless-escape. [Accessed: 11-Jun-2023].
-
-
-
-### File Name - Register.js
-
-*Line 59 
-
-```
-const passwordRegex = /^(?=.*[!@#$%^&*])(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*]{8,16}$/;
-
-```
-
-The code above was created by adapting the code in [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) as shown below: 
-
-```
-var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-
-```
-
-- <!---How---> The code in [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) was implemented by Rujoota Shah
-- <!---Why---> [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) Code was used because it uses a regex expession tovalidate password string
-- <!---How---> [Rujoota Shah](https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters) Code was modified such that it accepts minimum 8 charactes and maximum is 16, atleast one special character in the password
-
-*Repeat as needed*
 
 
 ## Acknowledgments
